@@ -1,0 +1,47 @@
+.home {
+    .top-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        img{
+            width: 50%;
+        }
+
+        .top-text{
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+            font-size: 3rem;
+            padding: 1% 0;
+            }
+
+            p{
+            font-size: 1.5rem;
+            margin-top: 2%;
+            }
+
+            a{
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: black;
+                background-color: @bg-color;
+                border:1px solid black;
+                border-radius: 5px;
+                padding: 2% 3%;
+                margin-top: 5%;
+                width: 40%;
+
+                &:hover {
+                    background-color: white;
+                    color: @bg-color;
+                }
+            }
+        }
+    }
+}// ends this container

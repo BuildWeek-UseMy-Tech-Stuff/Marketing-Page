@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: @reg-font;
+    border: 1px solid black;
+
+    #logo {
+        width: 30%;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1% 0%;
+        background: white;
+        color: @bg-color;
+        text-decoration: none;
+
+    }
+    nav {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+            padding: 2% 1%;
+            background-color: @bg-color;
+            color: black;
+            border-left: 1px solid black;
+            text-align: center;
+            width: 25%;
+
+            :hover {
+                color: white;
+                background-color: black;
+                text-decoration: underline;
+            }
+        }
+    }
+}
