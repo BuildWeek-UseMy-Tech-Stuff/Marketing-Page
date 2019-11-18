@@ -169,10 +169,8 @@ header nav a {
   text-align: center;
   width: 25%;
 }
-header nav a :hover {
+header nav a:hover {
   color: white;
-  background-color: black;
-  text-decoration: underline;
 }
 footer {
   display: flex;
@@ -202,6 +200,7 @@ footer {
 }
 .home .top-content .top-text h2 {
   font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
   padding: 1% 0;
 }
 .home .top-content .top-text p {
@@ -217,9 +216,45 @@ footer {
   border-radius: 5px;
   padding: 2% 3%;
   margin-top: 5%;
-  width: 40%;
+  font-family: 'Tomorrow', sans-serif;
 }
 .home .top-content .top-text a:hover {
   background-color: white;
   color: lightblue;
+}
+.home .middle-section h2 {
+  margin-top: 2%;
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+}
+.home .middle-section .work-divs {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 2%;
+}
+.home .middle-section .work-divs h3 {
+  font-size: 2.3rem;
+  font-family: 'Tomorrow', sans-serif;
+}
+.home .bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.home .bottom-section .bottom-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.home .bottom-section .reverse-box {
+  width: 100%;
+  display: flex;
+}
+.home .bottom-section h2 {
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+}
+.home .bottom-section p {
+  font-size: 1.5rem;
 }

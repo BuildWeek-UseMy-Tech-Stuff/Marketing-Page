@@ -17,7 +17,7 @@
             align-items: center;
 
             h2{
-            font-size: 3rem;
+            .header(3rem);
             padding: 1% 0;
             }
 
@@ -27,21 +27,55 @@
             }
 
             a{
-                font-size: 1.5rem;
-                text-decoration: none;
-                color: black;
-                background-color: @bg-color;
-                border:1px solid black;
-                border-radius: 5px;
-                padding: 2% 3%;
-                margin-top: 5%;
-                width: 40%;
-
-                &:hover {
-                    background-color: white;
-                    color: @bg-color;
-                }
+                .button(1.5rem, 40%);   
             }
+        }
+    }//end of top content
+
+    .middle-section {
+        
+        h2 {
+            margin-top:2%;
+            .header(3rem);
+        }
+
+        .work-divs {
+            
+           display: flex;
+           justify-content: space-evenly;
+           text-align: center;
+           margin-top: 2%;
+
+
+           h3 {
+               .header(2.3rem);
+           }
+        }
+
+    }//end of middle section
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        .bottom-box{
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .reverse-box{
+            width: 100%;
+            display: flex;
+        }
+
+        h2 {
+            .header(3rem);
+        }
+
+        p {
+            font-size: 1.5rem;
         }
     }
 }// ends this container
