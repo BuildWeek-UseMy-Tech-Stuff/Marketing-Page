@@ -174,15 +174,17 @@ header nav {
 header nav a {
   font-size: 1.5rem;
   text-decoration: none;
+  color: white;
   padding: 2% 1%;
   background-color: lightblue;
-  color: black;
   border-left: 1px solid black;
   text-align: center;
   width: 25%;
+  transition: 1.5s;
 }
 header nav a:hover {
-  color: white;
+  background-color: white;
+  color: black;
 }
 @media (max-width: 500px) {
   header nav a {
@@ -259,6 +261,7 @@ footer {
   padding: 3% 5%;
   margin-top: 10%;
   font-family: 'Tomorrow', sans-serif;
+  transition: 1.5s;
 }
 .home .top-content .top-text a:hover {
   background-color: white;
