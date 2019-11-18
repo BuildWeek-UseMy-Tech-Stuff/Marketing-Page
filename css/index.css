@@ -153,11 +153,23 @@ header #logo {
   color: lightblue;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  header #logo {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
 header nav {
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 header nav a {
   font-size: 1.5rem;
@@ -171,6 +183,24 @@ header nav a {
 }
 header nav a:hover {
   color: white;
+}
+@media (max-width: 500px) {
+  header nav a {
+    border-bottom: 1px solid black;
+    border-left: 0;
+    width: 100%;
+  }
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+  }
 }
 footer {
   display: flex;
@@ -188,9 +218,20 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    flex-direction: column;
+  }
 }
 .home .top-content img {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .top-content img {
+    display: none;
+  }
 }
 .home .top-content .top-text {
   margin: 1%;
@@ -202,6 +243,7 @@ footer {
   font-size: 3rem;
   font-family: 'Tomorrow', sans-serif;
   padding: 1% 0;
+  text-decoration: underline;
 }
 .home .top-content .top-text p {
   font-size: 1.5rem;
@@ -214,13 +256,19 @@ footer {
   background-color: lightblue;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 2% 3%;
-  margin-top: 5%;
+  padding: 3% 5%;
+  margin-top: 10%;
   font-family: 'Tomorrow', sans-serif;
 }
 .home .top-content .top-text a:hover {
   background-color: white;
   color: lightblue;
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text a {
+    width: 100%;
+    margin: 5% 0;
+  }
 }
 .home .middle-section h2 {
   margin-top: 2%;
@@ -229,32 +277,108 @@ footer {
 }
 .home .middle-section .work-divs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
-  margin-top: 2%;
+  padding: 2% 0;
+  margin: 2% 0;
+  width: 100%;
+  border-top: 1px dashed black;
+}
+@media (max-width: 500px) {
+  .home .middle-section .work-divs {
+    flex-direction: column;
+  }
+}
+.home .middle-section .work-divs .iphone-pic {
+  width: 90%;
+}
+.home .middle-section .work-divs .macbook-pic {
+  width: 90%;
 }
 .home .middle-section .work-divs h3 {
   font-size: 2.3rem;
   font-family: 'Tomorrow', sans-serif;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+.home .middle-section .work-divs p {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  margin: 3%;
 }
 .home .bottom-section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  margin: 2% 0;
+  padding: 2% 0;
+}
+.home .bottom-section .bottom-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .bottom-text {
+    width: 70%;
+    margin: 2% 0;
+  }
 }
 .home .bottom-section .bottom-box {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: lightblue;
+  margin: 1% 0;
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .bottom-box {
+    flex-direction: column;
+    background: white;
+  }
 }
 .home .bottom-section .reverse-box {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: lightblue;
+  margin: 1% 0;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .reverse-box {
+    flex-direction: column;
+    background: white;
+  }
+}
+.home .bottom-section img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .bottom-section img {
+    width: 90%;
+  }
 }
 .home .bottom-section h2 {
   font-size: 3rem;
   font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .home .bottom-section h2 {
+    padding: 2% 0;
+  }
 }
 .home .bottom-section p {
   font-size: 1.5rem;
+  margin: 10% 0;
+}
+@media (max-width: 500px) {
+  .home .bottom-section p {
+    margin: 2% 0;
+  }
 }
