@@ -401,6 +401,7 @@ footer {
 }
 .about-section h2 {
   font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
 }
 .about-section p {
   font-size: 1.5rem;
