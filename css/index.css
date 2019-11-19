@@ -335,7 +335,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightgrey;
+  background: whitesmoke;
   margin: 1% 0;
   flex-direction: row-reverse;
 }
@@ -351,7 +351,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightgrey;
+  background: whitesmoke;
   margin: 1% 0;
 }
 @media (max-width: 500px) {
