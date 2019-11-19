@@ -133,7 +133,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -143,6 +143,7 @@ header {
   align-content: center;
   font-family: 'Tomorrow', sans-serif;
   border: 1px solid black;
+  width: 100%;
 }
 header #logo {
   width: 30%;
@@ -180,7 +181,7 @@ header nav a {
   border-left: 1px solid black;
   text-align: center;
   width: 25%;
-  transition: 1.5s;
+  transition: 1s;
 }
 header nav a:hover {
   background-color: white;
@@ -258,10 +259,11 @@ footer {
   background-color: lightblue;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 3% 5%;
+  padding: 6% 20%;
   margin-top: 10%;
   font-family: 'Tomorrow', sans-serif;
   transition: 1.5s;
+  color: white;
 }
 .home .top-content .top-text a:hover {
   background-color: white;
@@ -333,7 +335,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightblue;
+  background: lightgrey;
   margin: 1% 0;
   flex-direction: row-reverse;
 }
@@ -349,7 +351,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightblue;
+  background: lightgrey;
   margin: 1% 0;
 }
 @media (max-width: 500px) {
