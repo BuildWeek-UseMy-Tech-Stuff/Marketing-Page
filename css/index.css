@@ -133,7 +133,7 @@ html {
   font-size: 62.5%;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -259,10 +259,10 @@ footer {
   background-color: lightblue;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 3% 5%;
+  padding: 6% 20%;
   margin-top: 10%;
   font-family: 'Tomorrow', sans-serif;
-  transition: 1s;
+  transition: 1.5s;
   color: white;
 }
 .home .top-content .top-text a:hover {
