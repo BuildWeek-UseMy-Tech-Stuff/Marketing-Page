@@ -1,0 +1,41 @@
+.header(@size) {
+    font-size: @size;
+    font-family: @reg-font;
+}
+
+.button(@size, @width) {
+    font-size: @size;
+    text-decoration: none;
+    color: black;
+    background-color: @bg-color;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 6% 20%;
+    margin-top: 10%;
+    font-family: @reg-font;
+
+    &:hover {
+    background-color: white;
+    color: @bg-color;
+    }
+
+    @media @phone {
+        width: 100%; 
+        margin: 5% 0;   
+    }
+}
+
+.box(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: whitesmoke;
+
+    margin: 1% 0;
+
+    @media @phone {
+        flex-direction: column;
+        background: white;
+    }
+}

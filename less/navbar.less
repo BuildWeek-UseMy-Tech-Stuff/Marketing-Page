@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: @reg-font;
+    border: 1px solid black;
+    width: 100%;
+
+    #logo {
+        width: 30%;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1% 0%;
+        background: white;
+        color: @bg-color;
+        text-decoration: none;
+
+        @media @phone {
+            width:100%;
+            margin:2% 0;
+        }
+
+    }
+    nav {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @media @phone {
+            width:100%;
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            padding: 2% 1%;
+            background-color: @bg-color;
+            border-left: 1px solid black;
+            text-align: center;
+            width: 25%;
+            transition: 1s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+
+            @media @phone {
+                border-bottom: 1px solid black;
+                border-left: 0;
+                width: 100%;
+
+                &:first-child {
+                    border-top: 1px solid black;
+                }
+            }
+        }
+    }
+
+    @media @phone {
+        flex-direction: column;
+        justify-content: center;
+        border: 0;
+        text-align: center;
+    }
+}

@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-family: 'Tomorrow', sans-serif;
+  border: 1px solid black;
+  width: 100%;
+}
+header #logo {
+  width: 30%;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1% 0%;
+  background: white;
+  color: lightblue;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header #logo {
+    width: 100%;
+    margin: 2% 0;
+  }
+}
+header nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+header nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 2% 1%;
+  background-color: lightblue;
+  border-left: 1px solid black;
+  text-align: center;
+  width: 25%;
+  transition: 1s;
+}
+header nav a:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 500px) {
+  header nav a {
+    border-bottom: 1px solid black;
+    border-left: 0;
+    width: 100%;
+  }
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  background-color: lightblue;
+  border: 1px solid black;
+  font-family: 'Tomorrow', sans-serif;
+}
+.home .top-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    flex-direction: column;
+  }
+}
+.home .top-content img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .top-content img {
+    display: none;
+  }
+}
+.home .top-content .top-text {
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .top-content .top-text h2 {
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+  padding: 1% 0;
+  text-decoration: underline;
+}
+.home .top-content .top-text p {
+  font-size: 1.5rem;
+  margin-top: 2%;
+}
+.home .top-content .top-text a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6% 20%;
+  margin-top: 10%;
+  font-family: 'Tomorrow', sans-serif;
+  transition: 1.5s;
+  color: white;
+}
+.home .top-content .top-text a:hover {
+  background-color: white;
+  color: lightblue;
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text a {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+.home .middle-section h2 {
+  margin-top: 2%;
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+}
+.home .middle-section .work-divs {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2% 0;
+  margin: 2% 0;
+  width: 100%;
+  border-top: 1px dashed black;
+}
+@media (max-width: 500px) {
+  .home .middle-section .work-divs {
+    flex-direction: column;
+  }
+}
+.home .middle-section .work-divs .iphone-pic {
+  width: 90%;
+}
+.home .middle-section .work-divs .macbook-pic {
+  width: 90%;
+}
+.home .middle-section .work-divs h3 {
+  font-size: 2.3rem;
+  font-family: 'Tomorrow', sans-serif;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+.home .middle-section .work-divs p {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  margin: 3%;
+}
+.home .bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  margin: 2% 0;
+  padding: 2% 0;
+}
+.home .bottom-section .bottom-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .bottom-text {
+    width: 70%;
+    margin: 2% 0;
+  }
+}
+.home .bottom-section .bottom-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: whitesmoke;
+  margin: 1% 0;
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .bottom-box {
+    flex-direction: column;
+    background: white;
+  }
+}
+.home .bottom-section .reverse-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: whitesmoke;
+  margin: 1% 0;
+}
+@media (max-width: 500px) {
+  .home .bottom-section .reverse-box {
+    flex-direction: column;
+    background: white;
+  }
+}
+.home .bottom-section img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .bottom-section img {
+    width: 90%;
+  }
+}
+.home .bottom-section h2 {
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .home .bottom-section h2 {
+    padding: 2% 0;
+  }
+}
+.home .bottom-section p {
+  font-size: 1.5rem;
+  margin: 10% 0;
+}
+@media (max-width: 500px) {
+  .home .bottom-section p {
+    margin: 2% 0;
+  }
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+.about-section h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Tomorrow', sans-serif;
+  width: 100%;
+}
+.about-section h2 {
+  font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
+}
+.about-section p {
+  font-size: 1.5rem;
+  padding: 5%;
+}
+.about-section .icons {
+  display: flex;
+  margin: 2%;
+}
+.about-section .icons a {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  width: 50%;
+}
+.about-section #pl {
+  width: 95%;
+}
+.about-section #pl h2 {
+  font-size: 3rem;
+}
+.about-section #pl p {
+  font-size: 2rem;
+}
+.about-section .about-box {
+  display: flex;
+  width: 45%;
+  background: whitesmoke;
+  border: 1px solid black;
+  margin: 2% 0;
+  padding: 2%;
+}
+.about-section .about-box img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about-section .about-box .name-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+}
+.about-section .about-box .name-title h2 {
+  font-size: 2rem;
+}
+.about-section .about-box .name-title p {
+  width: 35%;
+  font-size: 1.5rem;
+  font-family: monospace;
+  background: lightblue;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  border-radius: 5px;
+}

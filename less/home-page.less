@@ -1,0 +1,154 @@
+.home {
+    .top-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 2% 0;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        img{
+            width: 50%;
+
+            @media @phone {
+                display: none;
+            }
+        }
+
+        .top-text{
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2{
+                .header(3rem);
+                padding: 1% 0;
+                text-decoration: underline;
+            }
+
+            p{
+            font-size: 1.5rem;
+            margin-top: 2%;
+            }
+
+            a{
+                .button(1.5rem, 40%);
+                transition: 1.5s;
+                color: white;
+            }
+        }
+    }//end of top content
+
+    .middle-section {
+        
+        
+        h2 {
+            margin-top:2%;
+            .header(3rem);
+        }
+
+        .work-divs {
+            
+           display: flex;
+           justify-content: space-between;
+           text-align: center;
+           padding: 2% 0;
+           margin:2% 0;
+           width:100%;
+           border-top:1px dashed black;
+
+           @media @phone {
+               flex-direction: column;
+           }
+           
+            
+
+           .iphone-pic {
+               width:90%;
+           }
+
+           .macbook-pic {
+               width:90%;
+           }
+
+           h3 {
+            .header(2.3rem);
+            margin-top: 2%;
+            text-decoration: underline;
+            }
+
+           p {
+               margin-top: 5%;
+               font-size: 1.4rem;
+               margin:3%;
+           } 
+
+        }
+
+    }//end of middle section
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px dashed black;
+        border-bottom: 1px dashed black;
+        margin: 2% 0;
+        padding: 2% 0;
+
+        @media @phone {
+
+        }
+
+        .bottom-text {
+            width: 50%;
+
+            @media @phone {
+                width: 70%;
+                margin: 2% 0;
+            }
+        }
+        
+        .bottom-box{
+            width: 100%;
+            .box();
+            flex-direction: row-reverse;
+        }
+        
+        .reverse-box{
+            width: 100%;
+            .box();
+        }
+
+        img {
+            width: 50%;
+
+            @media @phone {
+                width: 90%;
+            }
+        }
+
+        h2 {
+            .header(3rem);
+            text-decoration: underline;
+
+            @media @phone {
+                padding: 2% 0;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10% 0;
+
+            @media @phone {
+                margin: 2% 0;
+            }
+        }
+    }
+}// ends this container
