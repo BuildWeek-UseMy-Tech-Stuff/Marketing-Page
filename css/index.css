@@ -209,7 +209,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 20px 0;
   background-color: lightblue;
   border: 1px solid black;
@@ -335,7 +335,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightgrey;
+  background: whitesmoke;
   margin: 1% 0;
   flex-direction: row-reverse;
 }
@@ -351,7 +351,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: lightgrey;
+  background: whitesmoke;
   margin: 1% 0;
 }
 @media (max-width: 500px) {
@@ -401,6 +401,7 @@ footer {
 }
 .about-section h2 {
   font-family: 'Tomorrow', sans-serif;
+  text-decoration: underline;
 }
 .about-section p {
   font-size: 1.5rem;
