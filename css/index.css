@@ -387,3 +387,20 @@ footer {
     margin: 2% 0;
   }
 }
+.about-section h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Tomorrow', sans-serif;
+}
+.about-section h2 {
+  font-size: 3rem;
+  font-family: 'Tomorrow', sans-serif;
+}
+.about-section p {
+  font-size: 2rem;
+}
+.about-section a {
+  font-size: 3rem;
+  color: lightblue;
+  text-align: center;
+}
