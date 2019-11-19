@@ -387,10 +387,16 @@ footer {
     margin: 2% 0;
   }
 }
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .about-section h1 {
   font-size: 4rem;
   text-align: center;
   font-family: 'Tomorrow', sans-serif;
+  width: 100%;
 }
 .about-section h2 {
   font-size: 3rem;
@@ -403,4 +409,15 @@ footer {
   font-size: 3rem;
   color: lightblue;
   text-align: center;
+}
+.about-section #pl {
+  width: 100%;
+}
+.about-section .about-box {
+  display: flex;
+  width: 45%;
+  background: lightgrey;
+}
+.about-section .about-box img {
+  width: 100%;
 }

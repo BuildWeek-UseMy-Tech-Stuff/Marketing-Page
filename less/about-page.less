@@ -1,8 +1,13 @@
 .about-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     h1 {
         font-size: 4rem;
         text-align: center;
         font-family: @reg-font;
+        width: 100%;
     }
 
     h2 {
@@ -20,5 +25,17 @@
         text-align: center;
     }
 
-    
+    #pl {
+        width: 100%;
+    }
+
+    .about-box {
+        display: flex;
+        width: 45%;
+        background: lightgrey;
+
+        img {
+            width: 100%;
+        }
+    }
 }
