@@ -395,6 +395,7 @@ footer {
 @media (max-width: 500px) {
   .about-section {
     flex-direction: column;
+    align-items: center;
   }
 }
 .about-section h1 {
@@ -410,6 +411,7 @@ footer {
 .about-section p {
   font-size: 1.5rem;
   padding: 5%;
+  font-family: sans-serif;
 }
 .about-section .icons {
   display: flex;
@@ -421,27 +423,30 @@ footer {
   text-align: center;
   width: 50%;
 }
-.about-section #pl {
+.about-section .pl {
   width: 95%;
 }
-.about-section #pl h2 {
-  font-size: 3rem;
+.about-section .pl h2 {
+  font-size: 2.5rem;
 }
-.about-section #pl p {
+.about-section .pl p {
   font-size: 2rem;
 }
+.about-section .pl a {
+  font-size: 4rem;
+}
 @media (max-width: 500px) {
-  .about-section #pl {
+  .about-section .pl {
     width: 100%;
   }
-  .about-section #pl h2 {
+  .about-section .pl h2 {
     font-size: 2rem;
   }
-  .about-section #pl p {
+  .about-section .pl p {
     font-size: 1.5rem;
   }
 }
-.about-section .about-box {
+.about-box {
   display: flex;
   width: 45%;
   background: whitesmoke;
@@ -450,24 +455,25 @@ footer {
   padding: 2%;
 }
 @media (max-width: 500px) {
-  .about-section .about-box {
+  .about-box {
     width: 100%;
   }
 }
-.about-section .about-box img {
+.about-box img {
   width: 100%;
+  border: 2px solid white;
   border-radius: 50%;
 }
-.about-section .about-box .name-title {
+.about-box .name-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2%;
 }
-.about-section .about-box .name-title h2 {
+.about-box .name-title h2 {
   font-size: 2rem;
 }
-.about-section .about-box .name-title p {
+.about-box .name-title p {
   width: 35%;
   font-size: 1.5rem;
   font-family: monospace;
@@ -476,4 +482,16 @@ footer {
   text-align: center;
   padding: 2%;
   border-radius: 5px;
+}
+.about-box .pfp-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about-box .main-text {
+  width: 70%;
+}
+.about-box .pfp-links {
+  width: 30%;
 }
