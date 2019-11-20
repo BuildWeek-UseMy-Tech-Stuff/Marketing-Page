@@ -180,7 +180,7 @@ header nav a {
   background-color: lightblue;
   border-left: 1px solid black;
   text-align: center;
-  width: 25%;
+  width: 34%;
   transition: 1s;
 }
 header nav a:hover {
@@ -308,14 +308,13 @@ footer {
 }
 .home .middle-section .work-divs p {
   margin-top: 5%;
-  font-size: 1.4rem;
+  font-size: 2rem;
   margin: 3%;
 }
 .home .bottom-section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 1px dashed black;
   border-bottom: 1px dashed black;
   margin: 2% 0;
   padding: 2% 0;
@@ -379,7 +378,7 @@ footer {
   }
 }
 .home .bottom-section p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 10% 0;
 }
 @media (max-width: 500px) {
@@ -392,6 +391,11 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .about-section {
+    flex-direction: column;
+  }
 }
 .about-section h1 {
   font-size: 4rem;
@@ -426,6 +430,17 @@ footer {
 .about-section #pl p {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .about-section #pl {
+    width: 100%;
+  }
+  .about-section #pl h2 {
+    font-size: 2rem;
+  }
+  .about-section #pl p {
+    font-size: 1.5rem;
+  }
+}
 .about-section .about-box {
   display: flex;
   width: 45%;
@@ -433,6 +448,11 @@ footer {
   border: 1px solid black;
   margin: 2% 0;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .about-section .about-box {
+    width: 100%;
+  }
 }
 .about-section .about-box img {
   width: 100%;
